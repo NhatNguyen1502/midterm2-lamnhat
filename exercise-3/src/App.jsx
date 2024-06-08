@@ -13,7 +13,7 @@ function App() {
     setB(event.target.value);
   }
   function onCompute() {
-    if (isNaN(a) || isNaN(b)) {
+    if (isNaN(a) || isNaN(b) || a=='' || b=='') {
       setResult("A and B shall be numbers!");
     } else {
       setResult(+a + +b);
